@@ -1,0 +1,29 @@
+.copyright
+
+	- var currentDate = new Date();
+	- var year = currentDate.getFullYear();
+
+	a(id="chat-button" href="https://www.wp-talk.com/kakao/" target="_blank")
+			img(src="https://hellotblog.files.wordpress.com/2019/07/kakaotalk-chat-button-100x100.png")
+	a(id="back-to-top" href="#" title="Go To Top")
+			i(class="fas fa-chevron-up")
+
+	p © #{year} WP-TALK.COM
+
+	script(src=url_for("js/jquery-3.4.1.min.js"))
+	script(src=url_for("js/date.js"))
+	script(src=url_for("js/main.js"))
+	script(src=url_for("js/all.js"))
+
+	if url_for(page.path) == '/add-intro-page/'
+		script(src=url_for("js/clipboard-1.5.12.min.js"))
+		script.
+			new Clipboard('.copyContent');
+
+	else if url_for(page.path) == '/payinfo/'
+		script(src=url_for("js/clipboard-1.5.12.min.js"))
+		script.
+			new Clipboard('.copyContent');
+
+	else
+		script(src=url_for("js/mouseon.js"))

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /archives/
+Disallow: /payinfo/
+Disallow: /test/
