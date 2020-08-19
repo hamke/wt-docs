@@ -2,4 +2,6 @@ User-agent: *
 Disallow: /assets/
 Disallow: /archives/
 Disallow: /payinfo/
+Disallow: /kr/payinfo/
+Disallow: /kr/lesson/
 Disallow: /test/
