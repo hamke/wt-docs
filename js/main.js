@@ -18,3 +18,13 @@ $(document).ready(function(){
     });
     // $('#back-to-top').tooltip('show');
 });
+
+function copyToClipboard(param){
+	var el =document.createElement('input');
+	document.body.appendChild(el)
+	el.value =param.textContent
+	el.select();
+	document.execCommand('copy',false);
+	el.remove();
+	alert("자동 복사되었습니다 : " + el.value);
+}
